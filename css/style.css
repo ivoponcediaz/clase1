@@ -18,8 +18,8 @@ body header {
   background-repeat: no-repeat;
 }
 
-body header .navbar--green {
-  background-color: darkolivegreen;
+body header .navbar--white {
+  background-color: darkgray;
 }
 
 /*SECTIONS*/

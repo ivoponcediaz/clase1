@@ -25,82 +25,130 @@
     <title>ViveroMalpais</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar--white">
-      <div class="container">
-        <a class="navbar-brand" href="#">VM</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a
-                class="nav-link active"
-                aria-current="page"
-                href="../index.html"
-                >Inicio</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../pages/productosyservicios.html"
-                >Productos y Servicios</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../pages/diseños.html">Diseños</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../pages/nosotros.html">Nosotros</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../pages/contacto.html">Contacto</a>
-            </li>
-          </ul>
-          <form class="d-flex" role="search">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button class="btn btn-outline-success" type="submit">
-              Búsqueda
-            </button>
-          </form>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar--black">
+        <div class="container">
+          <a class="navbar-brand" href="#">VM</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="../index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/productosyservicios.html"
+                  >Productos y Servicios</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/diseños.html">Diseños</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Búsqueda
+              </button>
+            </form>
+          </div>
         </div>
-      </div>
-    </nav>
-    <h1>Productos y Servicios</h1>
-    <main>
+      </nav>
+    </header>
+    <main class="container">
       <section>
-        <table>
-          <tr>
-            <th>Plantas de Exterior</th>
-            <th>Plantas de Interior</th>
-            <th>Huerto</th>
-            <th>Semillas</th>
-          </tr>
-          <tr>
-            <td>Fila 1 - Columna 1</td>
-            <td>Fila 2 - Columna 2</td>
-            <td>Fila 3 - Columna 3</td>
-          </tr>
-          <tr>
-            <td>Fila 2 - Columna 1</td>
-            <td>Fila 2 - Columna 2</td>
-            <td>Fila 2 - Columna 3</td>
-          </tr>
+        <h2>Productos</h2>
+        <table class="table table-responsive">
+          <thead>
+            <tr>
+              <th>Nombre</th>
+              <th>Descripción</th>
+              <th>Precio</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Palmeras</td>
+              <td>Palmeras de diferentes tamaños y variedades.</td>
+              <td>$50 - $150</td>
+            </tr>
+            <tr>
+              <td>Tomates cherry</td>
+              <td>Paquete de semillas para cultivar tomates cherry.</td>
+              <td>$5</td>
+            </tr>
+            <tr>
+              <td>Jardín Vertical</td>
+              <td>Kit para crear un jardín vertical en tu hogar.</td>
+              <td>$100</td>
+            </tr>
+            <tr>
+              <td>Macetas de Cerámica</td>
+              <td>Macetas de cerámica de diferentes tamaños y colores.</td>
+              <td>$20 - $50</td>
+            </tr>
+          </tbody>
         </table>
       </section>
-      <section></section>
+      <section>
+        <h2>Servicios</h2>
+        <table class="table table-responsive">
+          <thead>
+            <tr>
+              <th>Nombre</th>
+              <th>Descripción</th>
+              <th>Precio</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Diseño de Jardín</td>
+              <td>Planificación y diseño de un jardín personalizado.</td>
+              <td>$500 - $2000</td>
+            </tr>
+            <tr>
+              <td>Instalación de Riego</td>
+              <td>Instalación de sistemas de riego automatizados.</td>
+              <td>$500 - $1500</td>
+            </tr>
+            <tr>
+              <td>Cuidado de Plantas</td>
+              <td>Servicio de cuidado de plantas para hogares y oficinas.</td>
+              <td>$50 - $150 por visita</td>
+            </tr>
+            <tr>
+              <td>Asesoramiento en Cultivo</td>
+              <td>Asesoramiento en el cultivo de plantas y hortalizas.</td>
+              <td>$75 por hora</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
     </main>
     <!-- Aqui esta el Footer -->
     <footer>

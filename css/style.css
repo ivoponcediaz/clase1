@@ -1,8 +1,10 @@
 * {
-  margin: 0%;
-  padding: 0%;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
+
+/* Container */
 
 .container {
   width: 80%;
@@ -10,22 +12,21 @@
   max-width: 1300px;
 }
 
+/* Header */
+
 body header {
-  background-position: 0%;
-  height: 100px;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-body header .navbar--white {
-  background-color: darkgray;
+body header .navbar--black {
+  background-color: darkgoldenrod;
 }
 
-/*SECTIONS*/
+/* Sections */
 
 .section h2 {
-  color: black;
   font-size: 10vw;
   opacity: 0.5;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
@@ -37,21 +38,16 @@ body header .navbar--white {
 }
 
 .section-contact {
-  height: 25vh;
   text-align: center;
 }
 
 .section-contact h2 {
-  color: black;
-  font-size: 10vw;
-  opacity: 0.5;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   margin-top: 10vh;
 }
 
-.section-contact a {
-  text-decoration: none;
-}
+/* Images */
+
+/* Media Queries */
 
 @media screen and (min-width: 768px) {
   .section h2 {
@@ -68,13 +64,14 @@ body header .navbar--white {
     visibility: hidden;
   }
 
-  /*PRODUCT SCROLL*/
+  /* Product Scroll */
 
   .scroll-img {
     max-height: 250vh;
     overflow-y: scroll;
   }
 }
+
 @media screen and (max-width: 768px) {
   .scroll {
     display: none;
@@ -82,7 +79,7 @@ body header .navbar--white {
   }
 }
 
-/*IFRAME*/
+/* Iframe */
 
 .iframe-container {
   position: relative;
@@ -101,10 +98,10 @@ body header .navbar--white {
   height: 100%;
 }
 
-/*FOOTER*/
+/* Footer */
 
 .footer-top {
-  height: 100px;
+  height: 10vh;
   line-height: 10vh;
 }
 

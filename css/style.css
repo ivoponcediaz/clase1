@@ -1,120 +1,140 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/* Estilos para la barra de navegación */
+.navbar {
+  background-color: darkolivegreen;
 }
 
-/* Container */
+.navbar-brand {
+  font-size: 2rem;
+}
 
+.nav-link {
+  color: #fff;
+}
+
+.nav-link:hover {
+  color: antiquewhite;
+}
+
+/* Estilos para el header */
+header {
+  margin-bottom: 2rem;
+}
+
+/* Estilos para la imagen principal */
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+  margin-top: 2rem;
+}
+
+/* Estilos para el footer */
+footer {
+  margin-top: 2rem;
+  padding: 2rem 0;
+  background-color: darkolivegreen;
+  color: #000;
+}
+
+.fa-VM {
+  color: #000;
+}
+
+.social-icons a {
+  color: #000;
+}
+
+.social-icons a:hover {
+  color: #fff;
+}
+
+/* Estilos generales */
 .container {
-  width: 80%;
+  max-width: 960px;
   margin: 0 auto;
-  max-width: 1300px;
+  padding: 0 1rem;
 }
 
-/* Header */
-
-body header {
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-body header .navbar--black {
-  background-color: darkgoldenrod;
-}
-
-/* Sections */
-
-.section h2 {
-  font-size: 10vw;
-  opacity: 0.5;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-  margin-top: 10vh;
-}
-
-.section a {
-  text-decoration: none;
-}
-
-.section-contact {
+.text-center {
   text-align: center;
 }
 
-.section-contact h2 {
-  margin-top: 10vh;
+.py-5 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
-/* Images */
+.display-6 {
+  font-size: 3rem;
+}
 
-/* Media Queries */
+.lead {
+  font-size: 1.25rem;
+  line-height: 1.8;
+}
 
-@media screen and (min-width: 768px) {
-  .section h2 {
-    margin-top: 20vh;
+.btn-outline-success {
+  color: #fff;
+  border-color: #fff;
+}
+
+.btn-outline-success:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+/* Animacion titulo */
+@keyframes wave {
+  0% {
+    transform: translateY(0);
   }
-  .section-contact h2 {
-    margin-top: 15vh;
+  25% {
+    transform: translateY(-8px);
   }
-  .section-contact {
-    height: 50vh;
+  50% {
+    transform: translateY(0);
   }
-  .carousel {
-    display: none;
-    visibility: hidden;
+  75% {
+    transform: translateY(8px);
   }
-
-  /* Product Scroll */
-
-  .scroll-img {
-    max-height: 250vh;
-    overflow-y: scroll;
+  100% {
+    transform: translateY(0);
   }
 }
 
-@media screen and (max-width: 768px) {
-  .scroll {
-    display: none;
-    visibility: hidden;
+/* Aplicando la animación al título */
+.animate-title {
+  animation-name: wave;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+/* Estilos para dispositivos móviles */
+@media screen and (max-width: 576px) {
+  .navbar-brand {
+    font-size: 1.5rem;
   }
-}
 
-/* Iframe */
+  .navbar-toggler {
+    margin-right: 1rem;
+  }
 
-.iframe-container {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  padding-top: 56.25%;
-}
+  .navbar-collapse {
+    margin-top: 1rem;
+  }
 
-.responsive-iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-}
+  .footer-top {
+    padding: 1rem;
+  }
 
-/* Footer */
+  .fa-VM {
+    margin-top: 1rem;
+  }
 
-.footer-top {
-  height: 10vh;
-  line-height: 10vh;
-}
+  .social-icons {
+    margin-top: 1rem;
+  }
 
-.footer-top a,
-a:visited {
-  text-decoration: none;
-  color: darkolivegreen;
-}
-
-.footer-bottom {
-  background-color: darkolivegreen;
-  color: white;
-  line-height: 2vh;
-  padding-top: 2vh;
-  font-size: smaller;
+  .btn {
+    margin-top: 1rem;
+  }
 }

@@ -1,0 +1,49 @@
+@keyframes wave {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-8px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(8px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Aplicando la animación al título */
+.animate-title {
+  animation-name: wave;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+/* Estilos para el footer */
+footer {
+  margin-top: 1rem;
+  padding: 1rem 0;
+  background-color: $primary-color;
+  color: $tertiary-color;
+
+  .fa-VM {
+    color: #000;
+    margin-top: 1rem;
+  }
+
+  .social-icons {
+    margin-top: 1rem;
+
+    a {
+      color: #000;
+
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+}

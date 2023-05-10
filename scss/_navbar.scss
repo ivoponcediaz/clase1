@@ -1,0 +1,16 @@
+/* Estilos para la barra de navegación */
+.navbar {
+  background-color: $primary-color;
+
+  &-brand {
+    font-size: 2rem;
+  }
+
+  &-link {
+    color: $secondary-color;
+
+    &:hover {
+      color: antiquewhite;
+    }
+  }
+}

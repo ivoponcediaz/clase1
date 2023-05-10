@@ -1,0 +1,35 @@
+header {
+  margin-bottom: 2rem;
+}
+
+/* Estilos para la imagen principal */
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 1rem;
+
+  .img-fluid {
+    max-width: 100%;
+    height: auto;
+    margin-top: 2rem;
+  }
+
+  .text-center {
+    text-align: center;
+  }
+
+  .py-5 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .display-6 {
+    font-size: 3rem;
+  }
+
+  .lead {
+    font-size: 1.25rem;
+    line-height: 1.8;
+  }
+}

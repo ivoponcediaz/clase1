@@ -1,0 +1,15 @@
+@mixin media($size) {
+  @media only screen and (max-width: $size) {
+    @content;
+  }
+}
+
+@mixin button($color) {
+  border-color: $color;
+  color: $color;
+
+  &:hover {
+    background-color: $color;
+    color: #000;
+  }
+}

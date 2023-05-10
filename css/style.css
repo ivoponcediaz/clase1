@@ -1,88 +1,34 @@
-/* Estilos para la barra de navegación */
-.navbar {
-  background-color: darkolivegreen;
-}
-
-.navbar-brand {
-  font-size: 2rem;
-}
-
-.nav-link {
-  color: #fff;
-}
-
-.nav-link:hover {
-  color: antiquewhite;
-}
-
-/* Estilos para el header */
+@charset "UTF-8";
 header {
   margin-bottom: 2rem;
 }
 
 /* Estilos para la imagen principal */
-.img-fluid {
-  max-width: 100%;
-  height: auto;
-  margin-top: 2rem;
-}
-
-/* Estilos para el footer */
-footer {
-  margin-top: 2rem;
-  padding: 2rem 0;
-  background-color: darkolivegreen;
-  color: #000;
-}
-
-.fa-VM {
-  color: #000;
-}
-
-.social-icons a {
-  color: #000;
-}
-
-.social-icons a:hover {
-  color: #fff;
-}
-
-/* Estilos generales */
 .container {
   max-width: 960px;
   margin: 0 auto;
   padding: 0 1rem;
 }
-
-.text-center {
+.container .img-fluid {
+  max-width: 100%;
+  height: auto;
+  margin-top: 2rem;
+}
+.container .text-center {
   text-align: center;
 }
-
-.py-5 {
+.container .py-5 {
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
-
-.display-6 {
+.container .display-6 {
   font-size: 3rem;
 }
-
-.lead {
+.container .lead {
   font-size: 1.25rem;
   line-height: 1.8;
 }
 
-.btn-outline-success {
-  color: #fff;
-  border-color: #fff;
-}
-
-.btn-outline-success:hover {
-  background-color: #fff;
-  color: #000;
-}
-
-/* Animacion titulo */
 @keyframes wave {
   0% {
     transform: translateY(0);
@@ -100,7 +46,6 @@ footer {
     transform: translateY(0);
   }
 }
-
 /* Aplicando la animación al título */
 .animate-title {
   animation-name: wave;
@@ -108,33 +53,65 @@ footer {
   animation-iteration-count: infinite;
 }
 
-/* Estilos para dispositivos móviles */
-@media screen and (max-width: 576px) {
+/* Estilos para el footer */
+footer {
+  margin-top: 1rem;
+  padding: 1rem 0;
+  background-color: darkolivegreen;
+  color: #000;
+}
+footer .fa-VM {
+  color: #000;
+  margin-top: 1rem;
+}
+footer .social-icons {
+  margin-top: 1rem;
+}
+footer .social-icons a {
+  color: #000;
+}
+footer .social-icons a:hover {
+  color: #fff;
+}
+
+@media (max-width: 576px) {
   .navbar-brand {
     font-size: 1.5rem;
   }
-
   .navbar-toggler {
     margin-right: 1rem;
   }
-
   .navbar-collapse {
     margin-top: 1rem;
   }
-
   .footer-top {
     padding: 1rem;
   }
-
+  .footer-top {
+    padding: 1rem;
+  }
   .fa-VM {
     margin-top: 1rem;
   }
-
   .social-icons {
     margin-top: 1rem;
   }
-
   .btn {
     margin-top: 1rem;
   }
 }
+/* Estilos para la barra de navegación */
+.navbar {
+  background-color: darkolivegreen;
+}
+.navbar-brand {
+  font-size: 2rem;
+}
+.navbar-link {
+  color: #fff;
+}
+.navbar-link:hover {
+  color: antiquewhite;
+}
+
+/*# sourceMappingURL=style.css.map */
